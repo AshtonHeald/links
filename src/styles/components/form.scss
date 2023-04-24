@@ -1,0 +1,28 @@
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/variables" as var;
+form {
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		.col {
+			width: 48.5%;
+			@include bp.small {
+				width: 142px;
+			}
+		}
+	}
+	.col {
+		display: flex;
+		flex-direction: column;
+		input,
+		textarea {
+			margin-bottom: 8px;
+			padding: 5px;
+			border: 2px solid var.$black;
+			border-radius: 4px;
+		}
+	}
+	button {
+		margin: 4px auto;
+	}
+}

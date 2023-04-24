@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as var;
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	.icon {
+		margin-left: 4px;
+		color: var.$heart;
+	}
+}

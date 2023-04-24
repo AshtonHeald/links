@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+
+#header {
+	display: grid;
+	place-items: center;
+	img {
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+	}
+	nav {
+		ul {
+			display: flex;
+			padding: 10px;
+			li {
+				a {
+					display: grid;
+					place-items: center;
+					&:hover,
+					&:focus {
+						transform: scale(1.15);
+						transition: all 0.1s ease-in-out;
+					}
+				}
+				.icon {
+					font-size: 26px;
+					margin: 0 15px;
+					max-height: 26px;
+					max-width: 26px;
+				}
+				&:nth-child(1) .icon {
+					color: var.$twitter;
+				}
+				&:nth-child(2) .icon {
+					color: var.$hashnode;
+				}
+			}
+		}
+	}
+}

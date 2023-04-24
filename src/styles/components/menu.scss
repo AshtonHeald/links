@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as var;
+
+#menu {
+	li {
+		padding: 10px 0;
+		h3 {
+			text-align: center;
+		}
+		.button {
+			display: flex;
+			justify-content: center;
+		}
+		.icon {
+			font-size: 18px;
+			margin-left: 5px;
+			margin-bottom: 5px;
+		}
+		&:nth-child(1) .icon {
+			color: var.$seedling;
+		}
+		&:nth-child(3) .icon {
+			color: var.$envelope;
+		}
+	}
+}
+
+#menu {
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+#menu.flip {
+	transform: rotateY(-180deg);
+	transition: transform 0.5s;
+}
+
+.front,
+.back {
+	height: 100%;
+}
+
+.back {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: var.$white;
+	backface-visibility: hidden;
+	transform: rotateY(-180deg);
+	border: 2px solid var.$black;
+	border-radius: 6px;
+	padding: 0 10px;
+}
+.contact {
+	button {
+		font-size: 22px;
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

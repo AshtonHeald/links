@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+p,
+span,
+a,
+h2,
+h3 {
+	color: var.$black;
+	font-size: 18px;
+}
+a {
+	text-decoration: none;
+}
+a:focus,
+button:focus,
+button:focus-visible {
+	outline: none;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

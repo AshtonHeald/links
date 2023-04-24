@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as var;
+.button,
+.md-button,
+.sm-button {
+	display: grid;
+	place-items: center;
+	height: 50px;
+	//width: -moz-available;
+	border: 2px solid var.$black;
+	border-radius: 4px;
+	box-shadow: 3px 3px 0 var.$black;
+	transition-delay: 0s;
+	transition-duration: 0.14s;
+	transition-property: all;
+	transition-timing-function: ease-out;
+	&:hover,
+	&:focus {
+		box-shadow: 1.5px 1.5px 0 var.$black;
+		transform: translate(1.25px, 1.25px);
+	}
+	&:active {
+		box-shadow: none;
+		transform: translate(2.5px, 2.5px);
+	}
+}
+.button {
+	position: relative;
+	height: 50px;
+	width: calc(100% - 3px);
+}
+.md-button {
+	width: 120px;
+	height: 32px;
+}
+.sm-button {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	line-height: 1.4;
+}
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}
