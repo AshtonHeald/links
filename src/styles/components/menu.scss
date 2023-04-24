@@ -32,18 +32,21 @@
 #menu.flip {
 	transform: rotateY(-180deg);
 	transition: transform 0.5s;
+	.front {
+		visibility: hidden;
+	}
 }
 
 .front,
 .back {
 	height: 100%;
+	background-color: var.$white;
 }
 
 .back {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background: var.$white;
 	backface-visibility: hidden;
 	transform: rotateY(-180deg);
 	border: 2px solid var.$black;
