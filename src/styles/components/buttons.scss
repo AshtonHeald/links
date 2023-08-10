@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as var;
 .button,
-.md-button,
-.sm-button {
+.md-button {
 	display: grid;
 	place-items: center;
 	height: 50px;

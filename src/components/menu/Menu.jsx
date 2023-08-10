@@ -16,18 +16,17 @@ const Menu = () => {
 					<ul>
 						<li>
 							<a className="button" href="https://ash.cafe/" rel="noreferrer">
-								Digital Garden <i className="fa-solid fa-seedling icon"></i>
+								Digital Garden
 							</a>
 						</li>
 						<li>
 							<a className="button" href="https://ashthe.dev/" rel="noreferrer">
-								Web Portfolio <i className="fa-solid fa-code icon"></i>
+								Web Portfolio
 							</a>
 						</li>
 						<li>
 							<button onClick={flipMenu} className="button">
 								<span>Contact</span>
-								<i class="fa-regular fa-envelope"></i>
 							</button>
 						</li>
 					</ul>
