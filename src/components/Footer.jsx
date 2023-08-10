@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer>
-				Made with <i className="fa-solid fa-heart icon"></i>
+				Made with <i class="fa-regular fa-heart"></i>
 			</footer>
 		</>
 	);

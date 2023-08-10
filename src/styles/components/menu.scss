@@ -10,16 +10,10 @@
 			display: flex;
 			justify-content: center;
 		}
-		.icon {
+		i {
 			font-size: 18px;
 			margin-left: 5px;
 			margin-bottom: 5px;
-		}
-		&:nth-child(1) .icon {
-			color: var.$seedling;
-		}
-		&:nth-child(3) .icon {
-			color: var.$envelope;
 		}
 	}
 }
@@ -39,7 +33,6 @@
 
 .front,
 .back {
-	height: 100%;
 	background-color: var.$white;
 }
 

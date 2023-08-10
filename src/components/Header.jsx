@@ -1,6 +1,5 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import Coffee from "../assets/coffee.svg";
 
 const Header = ({ img }) => {
 	return (
@@ -14,18 +13,29 @@ const Header = ({ img }) => {
 			<nav>
 				<ul>
 					<li>
+						<a href="https://www.threads.net/@ashton.heald" rel="noreferrer">
+							<i class="fa-brands fa-threads"></i>
+						</a>
+					</li>
+
+					<li>
 						<a href="https://twitter.com/AshtonHeald" rel="noreferrer">
-							<i class="fa-brands fa-twitter icon"></i>
+							<i class="fa-brands fa-x-twitter"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://hashnode.com/@AshTheDev" rel="noreferrer">
-							<i className="fa-brands fa-hashnode icon"></i>
+						<a href="https://medium.com/@ashtonheald" rel="noreferrer">
+							<i class="fa-brands fa-medium"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://dev.to/ashthedev" rel="noreferrer">
+							<i class="fa-brands fa-dev"></i>
 						</a>
 					</li>
 					<li>
 						<a href="https://www.buymeacoffee.com/ashtonheald" rel="noreferrer">
-							<img className="icon" src={Coffee} />
+							<i class="fa-solid fa-mug-hot"></i>
 						</a>
 					</li>
 				</ul>

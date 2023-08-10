@@ -8,7 +8,7 @@ h1 {
 	font-family: "Waterfall", cursive;
 	font-size: 38px;
 	margin: 5px 0;
-	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-width: 0.25px;
 }
 h2 {
 	font-size: 16px;
@@ -22,13 +22,6 @@ li * {
 	font-size: 22px;
 }
 
-.fa-twitter,
-.fa-hashnode,
-.fa-seedling,
-.fa-envelope,
-.fa-heart {
-	-webkit-text-stroke: 1.25px #000;
-}
 button {
 	font-family: Josefin Sans, sans-serif;
 }

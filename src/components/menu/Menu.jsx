@@ -1,6 +1,5 @@
 import React from "react";
 import Contact from "./Contact";
-import Carousel from "./Carousel";
 
 import { useState } from "react";
 
@@ -28,12 +27,8 @@ const Menu = () => {
 						<li>
 							<button onClick={flipMenu} className="button">
 								<span>Contact</span>
-								<i className="fa-solid fa-envelope icon"></i>
+								<i class="fa-regular fa-envelope"></i>
 							</button>
-						</li>
-						<li>
-							<h3>Advocacy</h3>
-							<Carousel />
 						</li>
 					</ul>
 				</nav>
